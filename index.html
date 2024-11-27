@@ -35,10 +35,10 @@
             <img class="h-8" src="./assets/component-1/navigation/cache-bank-logo.png">
           </div>
           <div class="hidden md:flex justify-between item-center text-black gap-12"> <!--Header Navigation Menu-->
-            <a class="text-sm font-normal text-dark-gray-700 hover:text-dark-gray-900" href="">Product</a>
-            <a class="text-sm font-normal text-dark-gray-700 hover:text-dark-gray-900" href="">Features</a>
-            <a class="text-sm font-normal text-dark-gray-700 hover:text-dark-gray-900" href="">Get Started</a>
-            <a class="text-sm font-normal text-dark-gray-700 hover:text-dark-gray-900" href="">Contact</a>
+            <a class="text-sm font-normal text-dark-gray-700 hover:text-dark-gray-900" href="#product">Product</a>
+            <a class="text-sm font-normal text-dark-gray-700 hover:text-dark-gray-900" href="#features">Features</a>
+            <a class="text-sm font-normal text-dark-gray-700 hover:text-dark-gray-900" href="#pricing">Get Started</a>
+            <a class="text-sm font-normal text-dark-gray-700 hover:text-dark-gray-900" href="#contact">Contact</a>
           </div>
           <div class="gap-8 p-4 items-center md:flex"> <!--LOG IN and Sign Up Button-->
             <button class="text-sm font-normal text-dark-gray-800 hover:text-dark-gray-900">Log IN</button>
@@ -76,40 +76,81 @@
           </button>
           <div class="absolute md:hidden flex md:flex flex-col items-start justify-center w-full overflow-hidden gap-3 bg-white max-h-screen top-full px-4 py-8 shadow-main " id="mobile-menu">
             
-              <a class="text-sm font-normal text-dark-gray-700 hover:text-dark-gray-900" href="">Product</a>
-              <a class="text-sm font-normal text-dark-gray-700 hover:text-dark-gray-900" href="">Features</a>
-              <a class="text-sm font-normal text-dark-gray-700 hover:text-dark-gray-900" href="">Get Started</a>
-              <a class="text-sm font-normal text-dark-gray-700 hover:text-dark-gray-900" href="">Contact</a>
+              <a class="text-sm font-normal text-dark-gray-700 hover:text-dark-gray-900" href="#product">Product</a>
+              <a class="text-sm font-normal text-dark-gray-700 hover:text-dark-gray-900" href="#features">Features</a>
+              <a class="text-sm font-normal text-dark-gray-700 hover:text-dark-gray-900" href="#pricing">Get Started</a>
+              <a class="text-sm font-normal text-dark-gray-700 hover:text-dark-gray-900" href="#contact">Contact</a>
            
               <button class="text-sm font-normal text-dark-gray-800 hover:text-dark-gray-900">Log IN</button>
               <button class="px-4 py-2 text-sm font-bold text-blue bg-green-500 rounded-xl hover:bg-pink-500">Sign Up</button>
           </div>
     </div>
     </div>
-    <div class="w-full">
+
+
+    <div class="w-full" id="product">  <!--Component 2-->
+
+      <section class="grid w-full grid-cols-1 my-auto mt-12 mb-8 md:grid-cols-2 xl:gap-14 md:gap-5">
+
+<div class="flex flex-col justify-center col-span-1 text-center lg:text-start">
+   
+  <h1 class="mb-8 text-4xl font-extrabold leading-tight lg:text-6xl text-dark-gray-900 ">
+    The Clever Place To Keep Your Cache
+   </h1>
+
+<p class="mb-6 text-base font-normal leading-7 lg:w-3/4 text-gray-900">Cache Bank is designed exclusively for software developers.We understand that your financial needs are as the code you write.Our services offer cutting edge financial solutions that help you take care of your cache.</p>
+     <div class="flex flex-col items-center gap-4 lg:flex-row">
+<!--Hero Navigation buttons-->
+         <button class="flex items-center py-4 text-sm font-bold text-white px-7 focus:ring-4 focus:ring-purple-blue-100 transition duration:300 rounded-xl bg-green-500 hover:bg-pink-500">Join Cache Now</button>
+         <button class="flex items-center py-4 text-sm font-bold text-white px-7 focus:ring-4 focus:ring-purple-blue-100 transition duration:300 rounded-xl bg-green-500 hover:bg-pink-500">Join Our Discord Server</button>
+
+     </div>
+</div>
+
+<div class="items-center justify-end hidden col-span-1 md:flex">
+<img class="w-4/5 rounded-md" src="/assets/component-2/hero-image.png" alt="Header Image"><!--Hero Image-->
+</div>
+      </section>
+<!--Endorsements-->
+<section class="w-full">
+    <div class="container flex flex-col items-center gap-8 mx-auto my-48">
+         <p class="text-center text-dark-gray-600 font-semibold mb-10 text-2xl">
+Endorsed by global companies like
+         </p>
+         <div class="flex flex-wrap items-center justify-center w-full gap-6 lg:gap-0 lg:flex-nowrap lg:justify-between">
+<img src="assets/component-2/logos/amazon-logo.svg">
+<img src="assets/component-2/logos/minecraft-logo.svg">
+<img src="assets/component-2/logos/nike-logo.svg">
+<img src="assets/component-2/logos/notion-logo.svg">
+<img src="assets/component-2/logos/steam-logo.svg">
+         </div>
+    </div>
+</section>
+    
+
         <!-- Wide full-width container for additional content -->
     </div>
-    <div class="container mx-auto">
+    <div class="container mx-auto" id="features"> <!--Component 3-->
         <!-- Centered container for more content -->
     </div>
-    <div class="w-full">
+    <div class="w-full" id="pricing"> <!--Component 4-->
         <!-- Wide full-width container for additional content -->
     </div>
-    </div>
-
+    <div class="w-full" id="company"> <!--Component 5-->
+      <!-- Wide full-width container-->
+</div>
          <!--FOOTER-->
-    <div class="w-full">
-        <!-- Wide full-width container-->
-    </div>
+
     <div class="w-full bg-green-500">
         <!-- Full-width footer container with green background -->
     </div>
+
+
     <script>
       document.getElementById("mobile-menu-toggle").addEventListener("click", function() {
         document.getElementById("mobile-menu").classList.toggle("hidden");
       });
-    </script>
-    
+    </script>   
     <script src="https://cdn.jsdelivr.net/gh/Loopple/loopple-public-assets@main/motion-tailwind/scripts/plugins/countup.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/Loopple/loopple-public-assets@main/motion-tailwind/scripts/countto.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/Loopple/loopple-public-assets@main/motion-tailwind/scripts/plugins/leaflet.js"></script>
